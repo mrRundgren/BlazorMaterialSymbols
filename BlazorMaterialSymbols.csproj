@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 
@@ -14,5 +15,16 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.11" />
   </ItemGroup>
+
+<PropertyGroup>
+	<OutputType>library</OutputType>
+	<TargetFramework>netcoreapp6.0</TargetFramework>
+	<PackageId>BlazorMaterialSymbols</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>Anders Rundgren</Authors>
+	<Company>Elicit</Company>
+	<PackageDescription>Simplifies the usage of Material Symbols in blazor applications</PackageDescription>
+	<RepositoryUrl>https://github.com/mrRundgren/BlazorMaterialSymbols</RepositoryUrl>
+</PropertyGroup>
 
 </Project>
