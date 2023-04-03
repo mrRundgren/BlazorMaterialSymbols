@@ -1,0 +1,50 @@
+﻿@using BlazorMaterialSymbols
+
+@if(Visible)
+{
+    <i class="@GetClass()" @attributes="@GetAttributes()">@Name</i>
+}
+
+@code {
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object>? Attributes { get; set; }
+    [Parameter]
+    public string Name { get; set; } = string.Empty;
+    [Parameter]
+    public IconType Type { get; set; } = IconType.Outlined;
+    [Parameter]
+    public IconWeight Weight { get; set; } = IconWeight.Weight400;
+    [Parameter]
+    public IconFill Fill { get; set; } = IconFill.None;
+    [Parameter]
+    public IconGrade Grade { get; set; } = IconGrade.Medium;
+    [Parameter]
+    public IconSize Size { get; set; } = IconSize.Normal;
+    [Parameter]
+    public bool Visible { get; set; } = true;
+
+    [Parameter]
+    public EventCallback<string> NameChanged { get; set; }
+    [Parameter]
+    public EventCallback<IconType> TypeChanged { get; set; }
+    [Parameter]
+    public EventCallback<IconWeight> WeightChanged { get; set; }
+    [Parameter]
+    public EventCallback<IconFill> FillChanged { get; set; }
+    [Parameter]
+    public EventCallback<IconGrade> GradeChanged { get; set; }
+    [Parameter]
+    public EventCallback<IconSize> SizeChanged { get; set; }
+    [Parameter]
+    public EventCallback<bool> VisibleChanged { get; set; }
+
+    private static string _cssClass { get => Icons.BaseCssClass; }
+
+    public string GetClass()
+    {
+        return $"{_cssClass}{Type.CssClass()}{Fill.CssClass()}{Weight.CssClass()}{Grade.CssClass()}{Size.CssClass()}{(string.IsNullOrWhiteSpace(Class) ? "" : $" {Class}")}";
+    }
+
+    private string? Class { get => Attributes?.SingleOrDefault(_ => _.Key == "class").Value?.ToString(); }
+    private Dictionary<string, object>? GetAttributes() => Attributes?.Where(_ => _.Key != "class").ToDictionary(_ => _.Key, _ => _.Value);
+}
