@@ -22,15 +22,6 @@
     src: url('gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWE.woff2') format('woff2');
 }
 
-:root {
-    --material-symbols-family: 'Material Symbols Outlined';
-    --material-symbols-size: 24px;
-    --material-symbols-fill: 0;
-    --material-symbols-wght: 400;
-    --material-symbols-grad: 0;
-    --material-symbols-opsz: 24;
-}
-
 .material-symbols {
     font-family: var(--material-symbols-family);
     font-weight: normal;

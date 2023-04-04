@@ -20,7 +20,7 @@
 	<OutputType>library</OutputType>
 	<TargetFramework>netcoreapp6.0</TargetFramework>
 	<PackageId>BlazorMaterialSymbols</PackageId>
-	<Version>1.0.4</Version>
+	<Version>1.0.7</Version>
 	<Authors>Anders Rundgren</Authors>
 	<Company>Elicit</Company>
 	<PackageDescription>Simplifies the usage of Material Symbols in blazor applications</PackageDescription>
