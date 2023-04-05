@@ -32,13 +32,13 @@
     public EventCallback<IconSize> SizeChanged { get; set; }
 
     [Parameter]
-    public IconWeight Weight { get; set; } = IconWeight.Weight400;
+    public IconWeight Weight { get; set; } = IconWeight.W400;
 
     [Parameter]
     public EventCallback<IconWeight> WeightChanged { get; set; }
 
     [Parameter]
-    public IconGrade Grade { get; set; } = IconGrade.Medium;
+    public IconGrade Grade { get; set; } = IconGrade.Normal;
 
     [Parameter]
     public EventCallback<IconGrade> GradeChanged { get; set; }
@@ -47,9 +47,10 @@
 
     protected override void OnParametersSet()
     {
-        if(Grade == IconGrade.Low)
+        _grade = Grade.ToString();
+
+        if(Grade.Value() < 0)
         {
-            _grade = "-25";
             StateHasChanged();
         }
     }

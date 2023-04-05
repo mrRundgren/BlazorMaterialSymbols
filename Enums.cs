@@ -2,8 +2,8 @@
 
 public enum IconType { Outlined, Rounded, Sharp }
 public enum IconFill { None, Solid }
-public enum IconWeight { Weight100, Weight200, Weight300, Weight400, Weight500, Weight600, Weight700 }
-public enum IconGrade { Low, Medium, High }
-public enum IconSize { Small, Normal, Large, ExtraLarge }
+public enum IconWeight { W100, W200, W300, W400, W500, W600, W700 }
+public enum IconGrade { Min, Low, Normal, Max }
+public enum IconSize { SM, Normal, MD, LG, XL, XXL, XXXL }
 
 

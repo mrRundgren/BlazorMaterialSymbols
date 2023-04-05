@@ -36,11 +36,7 @@
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-    font-variation-settings: 
-        "FILL" var(--material-symbols-fill), 
-        "wght" var(--material-symbols-wght), 
-        "GRAD" var(--material-symbols-grad), 
-        "opsz" var(--material-symbols-opsz);
+    font-variation-settings: "FILL" var(--material-symbols-fill), "wght" var(--material-symbols-wght), "GRAD" var(--material-symbols-grad), "opsz" var(--material-symbols-opsz);
 }
 
 .material-symbols-sharp {
@@ -91,15 +87,19 @@
     --material-symbols-wght: 700;
 }
 
+.material-symbols-grad-min {
+    --material-symbols-grad: -50;
+}
+
 .material-symbols-grad-low {
     --material-symbols-grad: -25;
 }
 
-.material-symbols-grad-medium {
+.material-symbols-grad-normal {
     --material-symbols-grad: 0;
 }
 
-.material-symbols-grad-high {
+.material-symbols-grad-max {
     --material-symbols-grad: 200;
 }
 
@@ -113,6 +113,11 @@
     --material-symbols-size: 24px;
 }
 
+.material-symbols-opsz-32 {
+    --material-symbols-opsz: 32;
+    --material-symbols-size: 32px;
+}
+
 .material-symbols-opsz-40 {
     --material-symbols-opsz: 40;
     --material-symbols-size: 40px;
@@ -121,4 +126,14 @@
 .material-symbols-opsz-48 {
     --material-symbols-opsz: 48;
     --material-symbols-size: 48px;
+}
+
+.material-symbols-opsz-56 {
+    --material-symbols-opsz: 56;
+    --material-symbols-size: 56px;
+}
+
+.material-symbols-opsz-64 {
+    --material-symbols-opsz: 64;
+    --material-symbols-size: 64px;
 }
