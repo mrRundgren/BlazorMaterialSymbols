@@ -47,7 +47,7 @@
 
     protected override void OnParametersSet()
     {
-        _grade = Grade.ToString();
+        _grade = Grade.Value().ToString();
 
         if(Grade.Value() < 0)
         {
