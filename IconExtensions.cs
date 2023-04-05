@@ -64,7 +64,7 @@ public static class IconExtensions
         IconWeight.W100 => 100,
         IconWeight.W200 => 200,
         IconWeight.W300 => 300,
-        IconWeight.W400 => 300,
+        IconWeight.W400 => 400,
         IconWeight.W500 => 500,
         IconWeight.W600 => 600,
         IconWeight.W700 => 700,
